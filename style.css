@@ -157,11 +157,6 @@ header .info-text .scroll::before {
   background-color: #000000;
 }
 
-#features .card:hover {
-  border-color: #fff;
-  box-shadow: none;
-}
-
 #about .card img {
   max-width: 200px;
   max-height: 200px;
