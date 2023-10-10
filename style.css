@@ -104,7 +104,7 @@ header .info-text .scroll::before {
 #about .header,
 #features .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin-bottom: 40px;
 }
@@ -120,12 +120,23 @@ header .info-text .scroll::before {
 #features .header a {
   text-decoration: none;
   font-size: 1.3em;
-  color: #fff;
+  color: #ffffff;
   border: 1px solid transparent;
   padding: 10px 50px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
   border-radius: 6px;
   transition: all 0.3s ease;
+}
+
+#features .header p {
+  text-decoration: none;
+  font-size: 1.3em;
+  color: #ffffff;
+  border: none;
+  padding: 10px 0px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  border-radius: 6px;
+  transition: none;
 }
 
 #about .header a:hover,
@@ -146,7 +157,6 @@ header .info-text .scroll::before {
   background-color: #000000;
 }
 
-#about .card:hover,
 #features .card:hover {
   border-color: #fff;
   box-shadow: none;
@@ -155,6 +165,15 @@ header .info-text .scroll::before {
 #about .card img {
   max-width: 200px;
   max-height: 200px;
+}
+
+.rotate-on-hover {
+  transform: scale(1);
+  transition: transform 0.5s ease-in-out;
+}
+
+.rotate-on-hover:hover {
+  transform: scale(1.2) rotate(180deg); /* Escala para 120% e um giro de 180 graus */
 }
 
 #about .card .info {
@@ -218,6 +237,25 @@ header .info-text .scroll::before {
   font-size: 1.1rem;
 }
 
+.blur-on-hover {
+  filter: blur(0); /* Inicialmente, sem desfoque */
+  transition: filter 0.5s ease-in-out; /* Transição suave do filtro com duração de 1 segundo */
+
+  /* Outros estilos da imagem, se necessário */
+}
+
+.blur-on-hover:hover {
+  filter: blur(
+    5px
+  ); /* Aplicar desfoque de 5 pixels ao passar o cursor por cima */
+  animation: removeBlur 0.5s 0.5s forwards; /* Iniciar a animação após 1 segundo, com duração de 1 segundo */
+}
+
+@keyframes removeBlur {
+  to {
+    filter: blur(0); /* Remover o desfoque após a animação */
+  }
+}
 .card {
   text-align: center;
   align-items: center;
