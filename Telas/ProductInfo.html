@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto Personalizado</title>
+    <link rel="stylesheet" href="/estilos/ProductInfo.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="/index.html">
+                <img src="/img/logo-asxHD-removebg.svg" alt="" srcset="">
+            </a>    
+        </div>
+
+        <div>
+
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="/img/TeeASX.png" alt="Imagem do Produto">
+        </div>
+        <div class="product-details">
+            <h1 class="product-title">Camiseta Fucking Star</h1>
+            <p class="product-price">$129,90</p>
+            <div class="size-options">
+                <button class="size-btn">P</button>
+                <button class="size-btn">M</button>
+                <button class="size-btn">G</button>
+                <button class="size-btn">GG</button>
+            </div>
+            <label for="frete">Calcular Frete:</label>
+            <input type="text" id="cep" pattern="\d*" placeholder="Digite seu CEP">
+            <button onclick="calcularFrete()" class="calculate-shipping-btn">Calcular</button>
+
+            <h2>Resultado:</h2>
+            <span id="resultado"></span>
+            <h2>Prazo:</h2>
+            <span id="prazo"></span>
+            <p class="shipping-cost"></p>
+            <p class="product-description">
+                Descrição do produto vai aqui. Adicione detalhes sobre o material, tamanho, e outros
+                informações relevantes para o comprador.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

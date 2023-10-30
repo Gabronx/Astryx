@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    background-color: black;
+    height: 10%;
+
+}
+
+header.logo{
+    width: 100%;
+}
+
+.logo img{
+    max-width: 5%;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product-image img {
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.product-details {
+    max-width: 400px;
+    padding: 20px;
+    background-color: #ffffff32;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.product-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ff33e7;
+}
+
+.size-options {
+    margin: 10px 0;
+}
+
+.size-btn {
+    margin-right: 10px;
+    background-color: #717171;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.size-btn:hover {
+    transition: 0.2s;
+    margin-right: 10px;
+    background-color: #242424;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.size-btn:last-child {
+    margin-right: 0;
+}
+
+.calculate-shipping-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.product-description {
+    margin-top: 20px;
+    color: #555;
+}
